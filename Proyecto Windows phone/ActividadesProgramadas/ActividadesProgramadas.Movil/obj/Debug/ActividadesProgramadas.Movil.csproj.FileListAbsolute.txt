@@ -1,0 +1,52 @@
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\App.g.i.cs
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\MainPage.g.i.cs
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.g.resources
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ApplicationIcon.png
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\Background.png
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ActividadesProgramadas.Movil.dll
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ActividadesProgramadas.Movil.pdb
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\AppManifest.xaml
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ActividadesProgramadas.Movil.xap
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.dll
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.pdb
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\XapCacheFile.xml
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\icons\appbar.add.rest.png
+c:\users\administrador\documents\visual studio 2010\Projects\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\NuevaActividad.g.i.cs
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ApplicationIcon.png
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\Background.png
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\icons\appbar.add.rest.png
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\icons\appbar.close.rest.png
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\icons\appbar.save.rest.png
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ActividadesProgramadas.Movil.dll
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ActividadesProgramadas.Movil.pdb
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\AppManifest.xaml
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ActividadesProgramadas.Movil.xap
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ResolveAssemblyReference.cache
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\App.g.i.cs
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\MainPage.g.i.cs
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\NuevaActividad.g.i.cs
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\Page1.g.i.cs
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.g.resources
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.dll
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.pdb
+J:\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\XapCacheFile.xml
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ApplicationIcon.png
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\Background.png
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\icons\appbar.add.rest.png
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\icons\appbar.close.rest.png
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\icons\appbar.save.rest.png
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ActividadesProgramadas.Movil.dll
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ActividadesProgramadas.Movil.pdb
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\AppManifest.xaml
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\ActividadesProgramadas.Movil.xap
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ResolveAssemblyReference.cache
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\App.g.i.cs
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\MainPage.g.i.cs
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\NuevaActividad.g.i.cs
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\Page1.g.i.cs
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.g.resources
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.dll
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.pdb
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\XapCacheFile.xml
+D:\Backup USB\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\icons\appbar.feature.search.rest.png

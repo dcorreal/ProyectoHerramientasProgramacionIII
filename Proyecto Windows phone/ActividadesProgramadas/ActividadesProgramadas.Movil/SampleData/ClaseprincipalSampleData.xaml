@@ -1,0 +1,14 @@
+﻿<ActividadesProgramadas_Movil:Claseprincipal xmlns:ActividadesProgramadas_Movil="clr-namespace:ActividadesProgramadas.Movil">
+	<ActividadesProgramadas_Movil:Claseprincipal.Lista>
+		<ActividadesProgramadas_Movil:Actividad Descripcion="Reunión para definir el presidente de la compañía" FechaHora="11/13/2012 19:34:01" Identificador="01" Nombre="Junta Directiva" Tipo="Reunion"/>
+		<ActividadesProgramadas_Movil:Actividad Descripcion="Almuerzo familiar" FechaHora="11/13/2012 19:34:01" Identificador="02" Nombre="Almuerzo mamá" Tipo="Reunion"/>
+		<ActividadesProgramadas_Movil:Actividad Descripcion="Llevar toalla" FechaHora="11/13/2012 19:34:01" Identificador="03" Nombre="Ir al Gimnasio" Tipo="Deporte"/>
+		<ActividadesProgramadas_Movil:Actividad Descripcion="No olvidar comprar el regalo" FechaHora="11/13/2012 19:34:01" Identificador="04" Nombre="Cumpleaños de Tatiana" Tipo="Fiesta"/>
+		<ActividadesProgramadas_Movil:Actividad Descripcion="No olvidad la cédula" FechaHora="11/13/2012 19:34:01" Identificador="05" Nombre="Cita médica" Tipo="Medico"/>
+		<ActividadesProgramadas_Movil:Actividad Descripcion="Llevar guayos, y aguita" FechaHora="11/13/2012 19:34:01" Identificador="06" Nombre="Partido de Fútbol" Tipo="Deporte"/>
+		<ActividadesProgramadas_Movil:Actividad Descripcion="No olvidad comprar las papas" FechaHora="11/13/2012 19:34:01" Identificador="07" Nombre="Hacer mercado" Tipo="Hogar"/>
+		<ActividadesProgramadas_Movil:Actividad Descripcion="Servicios públicos y telecomunicaciones" FechaHora="11/13/2012 19:34:01" Identificador="08" Nombre="Pagar Facturas" Tipo="Hogar"/>
+		<ActividadesProgramadas_Movil:Actividad Descripcion="Debe ser por servientrega" FechaHora="11/13/2012 19:34:01" Identificador="09" Nombre="Enviar obsequio a papá" Tipo="Fiesta"/>
+		<ActividadesProgramadas_Movil:Actividad Descripcion="No olvidar hacer las de H3" FechaHora="11/13/2012 19:34:01" Identificador="10" Nombre="Hacer tarea de la universidad" Tipo="Estudio"/>
+	</ActividadesProgramadas_Movil:Claseprincipal.Lista>
+</ActividadesProgramadas_Movil:Claseprincipal>
