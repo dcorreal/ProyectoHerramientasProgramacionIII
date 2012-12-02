@@ -13,30 +13,26 @@ using Microsoft.Phone.Controls;
 
 namespace ActividadesProgramadas.Movil
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class editar : PhoneApplicationPage
     {
-        // Constructor
-        public MainPage()
+        public editar()
         {
             InitializeComponent();
         }
 
-        private void agregar_Click(object sender, System.EventArgs e)
+        private void cancelar_Click(object sender, System.EventArgs e)
         {
-            NavigationService.Navigate(
-                new Uri("/NuevaActividad.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/page1.xaml", UriKind.Relative));
         }
 
-        private void buscar_Click(object sender, System.EventArgs e)
+        private void guardar_Click(object sender, System.EventArgs e)
         {
-            NavigationService.Navigate( 
-                new Uri("/Page1.xaml", UriKind.Relative));
+            MessageBox.Show("¿Desea guardar los cambios realizados?");
         }
 
-        private void alerta_Click(object sender, System.EventArgs e)
+        private void prueba_Click(object sender, System.EventArgs e)
         {
             NavigationService.Navigate(new Uri("/alertas.xaml", UriKind.Relative));
         }
-
     }
 }

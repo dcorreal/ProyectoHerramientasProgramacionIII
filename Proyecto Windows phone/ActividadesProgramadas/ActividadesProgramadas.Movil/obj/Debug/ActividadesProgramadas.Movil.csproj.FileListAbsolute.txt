@@ -100,3 +100,6 @@ C:\Users\Diego Correa\Documents\GitHub\ProyectoHerramientasProgramacionIII\Proye
 C:\Users\Diego Correa\Documents\GitHub\ProyectoHerramientasProgramacionIII\Proyecto Windows phone\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.dll
 C:\Users\Diego Correa\Documents\GitHub\ProyectoHerramientasProgramacionIII\Proyecto Windows phone\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\ActividadesProgramadas.Movil.pdb
 C:\Users\Diego Correa\Documents\GitHub\ProyectoHerramientasProgramacionIII\Proyecto Windows phone\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\XapCacheFile.xml
+C:\Users\Diego Correa\Documents\GitHub\ProyectoHerramientasProgramacionIII\Proyecto Windows phone\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\editar.g.i.cs
+C:\Users\Diego Correa\Documents\GitHub\ProyectoHerramientasProgramacionIII\Proyecto Windows phone\ActividadesProgramadas\ActividadesProgramadas.Movil\obj\Debug\alertas.g.i.cs
+C:\Users\Diego Correa\Documents\GitHub\ProyectoHerramientasProgramacionIII\Proyecto Windows phone\ActividadesProgramadas\ActividadesProgramadas.Movil\Bin\Debug\icons\appbar.feature.settings.rest.png

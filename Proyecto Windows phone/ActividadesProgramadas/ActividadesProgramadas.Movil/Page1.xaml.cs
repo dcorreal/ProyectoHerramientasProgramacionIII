@@ -22,12 +22,17 @@ namespace ActividadesProgramadas.Movil
 
         private void editar_Click(object sender, System.EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/NuevaActividad.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/editar.xaml", UriKind.Relative));
         }
 
         private void eliminar_Click(object sender, System.EventArgs e)
         {
             MessageBox.Show("Desea eliminar el registro");
+        }
+
+        private void cancelar_Click(object sender, System.EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
         }
     }
 }

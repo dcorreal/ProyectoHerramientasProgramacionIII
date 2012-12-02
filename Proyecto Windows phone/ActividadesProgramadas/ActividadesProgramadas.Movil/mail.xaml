@@ -10,7 +10,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
     shell:SystemTray.IsVisible="True">
 	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar>
@@ -33,9 +33,9 @@
         <Grid Margin="12,0" Grid.Row="1">
 <!--ContentPanel. Colocar aquí el contenido adicional-->
         	<Grid x:Name="ContentPanel">
-        		<TextBlock Margin="8,21,171,0" TextWrapping="Wrap" Text="Dirección de correo electrónico" VerticalAlignment="Top"/>
+        		<TextBlock Margin="8,21,171,0" TextWrapping="Wrap" Text="Dirección de correo electrónico" VerticalAlignment="Top" Foreground="{StaticResource PhoneAccentBrush}"/>
         		<TextBox Margin="0,171,16,44" TextWrapping="Wrap" FontSize="13.333"/>
-        		<TextBlock Margin="8,140,171,0" TextWrapping="Wrap" Text="Observaciones" VerticalAlignment="Top"/>
+        		<TextBlock Margin="8,140,171,0" TextWrapping="Wrap" Text="Observaciones" VerticalAlignment="Top" Foreground="{StaticResource PhoneAccentBrush}"/>
         	</Grid>
         	<TextBox Margin="-4,54,4,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="64" FontSize="13.333"/>
         </Grid>

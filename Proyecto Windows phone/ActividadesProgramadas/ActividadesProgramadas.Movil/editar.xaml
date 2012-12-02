@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage 
-    x:Class="ActividadesProgramadas.Movil.NuevaActividad"
+    x:Class="ActividadesProgramadas.Movil.editar"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -15,9 +15,7 @@
 	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar>
 			<shell:ApplicationBarIconButton x:Name="cancelar" IconUri="/icons/appbar.close.rest.png" Text="cancelar" Click="cancelar_Click"/>
-			<shell:ApplicationBarIconButton x:Name="guardar" IconUri="/icons/appbar.save.rest.png" Text="Guardar" Click="guardar_Click"/>
-			<shell:ApplicationBarIconButton x:Name="borrar" IconUri="/icons/appbar.delete.rest.png" Text="borrar" Click="borrar_Click"/>
-			<shell:ApplicationBarIconButton x:Name="email" IconUri="/icons/appbar.feature.email.rest.png" Text="e-mail" Click="email_Click"/>
+			<shell:ApplicationBarIconButton x:Name="guardar" IconUri="/icons/appbar.save.rest.png" Text="guardar" Click="guardar_Click"/>
 		</shell:ApplicationBar>
 	</phone:PhoneApplicationPage.ApplicationBar>
 
@@ -29,12 +27,16 @@
         </Grid.RowDefinitions>
 
         <!--TitlePanel contiene el nombre de la aplicación y el título de la página-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="Actividades Programadas" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"><Run FontSize="32" Text="Ingreso"/></TextBlock>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"/>
+
+        <!--ContentPanel. Colocar aquí el contenido adicional-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <StackPanel x:Name="TitlePanel_Copy" Grid.Row="0" Margin="12,17,0,28">
+        	<TextBlock x:Name="ApplicationTitle" Text="Actividades Programadas" Style="{StaticResource PhoneTextNormalStyle}"/>
+        	<TextBlock x:Name="PageTitle" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"><Run FontSize="32" Text="Editar"/></TextBlock>
         </StackPanel>
-        <StackPanel x:Name="ContentPanel" Margin="12,0,12,0" Grid.Row="1" >
-        	<Grid x:Name="ContentPanel_Copy" Height="588">
+        <StackPanel x:Name="ContentPanel_Copy" Margin="12,0,12,72" Grid.Row="1" >
+        	<Grid x:Name="ContentPanel_Copy1" Height="531">
         		<StackPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Width="100"/>
         		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nombre de la actividad" VerticalAlignment="Top" Margin="10,11,0,0" FontWeight="Bold" FontSize="21.333">
         			<TextBlock.Foreground>
@@ -48,34 +50,34 @@
         		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="País" VerticalAlignment="Bottom" Margin="13,0,0,165" FontSize="16"/>
         		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Departamento" VerticalAlignment="Bottom" Margin="13,0,0,120" FontSize="16"/>
         		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ciudad" VerticalAlignment="Bottom" Margin="13,0,0,75" FontSize="16"/>
-        		<TextBox Margin="0,32,8,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="67" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" Name="txtnombre" />
+        		<TextBox Margin="0,32,8,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="67" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" />
         		<TextBlock TextWrapping="Wrap" Text="Diaria" VerticalAlignment="Top" Margin="8,122,0,0" RenderTransformOrigin="0.195,0.815" FontSize="16" HorizontalAlignment="Left"/>
         		<TextBlock TextWrapping="Wrap" Text="Semanal" VerticalAlignment="Top" Margin="102,123,0,0" RenderTransformOrigin="0.195,0.815" FontSize="16" HorizontalAlignment="Left"/>
         		<TextBlock TextWrapping="Wrap" Text="Mensual" VerticalAlignment="Top" Margin="0,122,164,0" RenderTransformOrigin="0.195,0.815" FontSize="16" HorizontalAlignment="Right"/>
         		<TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Margin="13,208,0,0" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left" FontSize="16"><Run Text="D"/><Run Text="ía"/></TextBlock>
         		<TextBlock TextWrapping="Wrap" Text="Mes" VerticalAlignment="Top" Margin="122,208,0,0" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left" FontSize="16"/>
         		<TextBlock TextWrapping="Wrap" Text="Año" VerticalAlignment="Top" Margin="0,208,168,0" RenderTransformOrigin="0.195,0.815" FontSize="16" HorizontalAlignment="Right"/>
-        		<TextBox Margin="43,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="57" FontSize="13.333" Name="txtdia" />
+        		<TextBox Margin="43,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="57" FontSize="13.333" />
         		<TextBlock TextWrapping="Wrap" Margin="13,0,0,261" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left" Text="Alta" FontSize="16" VerticalAlignment="Bottom"/>
         		<TextBlock TextWrapping="Wrap" Margin="112,0,0,259" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left" Text="Media" FontSize="16" VerticalAlignment="Bottom"/>
         		<TextBlock TextWrapping="Wrap" Margin="0,0,164,260" RenderTransformOrigin="0.509,0.5" Text="Baja" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="36"/>
-        		<TextBox Margin="141,0,12,147" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" Name="txtpais" />
-        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Dirección" VerticalAlignment="Bottom" Margin="13,0,0,32" FontSize="16"/>
-        		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="43,103,0,0" VerticalAlignment="Top" Height="62" Width="57" Checked="CheckBox_Checked" Name="chkdiaria" />
-        		<CheckBox Content="CheckBox" Margin="171,103,0,0" VerticalAlignment="Top" Height="62" HorizontalAlignment="Left" Width="57" Name="chksemanal" />
-        		<CheckBox Content="CheckBox" Margin="0,103,107,0" VerticalAlignment="Top" Height="62" HorizontalAlignment="Right" Width="57" Name="chkmensual" />
-        		<TextBox Margin="171,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="57" FontSize="13.333" Name="txtmes" />
-        		<TextBox Margin="0,194,107,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" HorizontalAlignment="Right" Width="57" FontSize="13.333" Name="txtano" />
-        		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="43,287,0,239" Width="57" Name="chkalto" />
-        		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="171,287,0,239" Width="57" Name="chkmedia" />
-        		<CheckBox Content="CheckBox" Margin="0,287,107,239" HorizontalAlignment="Right" Width="57" Name="chkbaja" />
-        		<TextBox Margin="141,0,12,103" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" Name="txtdepartamento" />
-        		<TextBox Margin="141,0,12,59" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" Name="txtciudad" />
-        		<TextBox Margin="141,0,12,14" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" Name="txtdireccion" />
+        		<TextBox Margin="141,0,12,147" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" />
+        		<TextBox Margin="171,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="57" FontSize="13.333" />
+        		<TextBox Margin="0,194,107,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" HorizontalAlignment="Right" Width="57" FontSize="13.333" />
+        		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="171,287,0,239" Width="57" />
+        		<TextBox Margin="141,0,12,100" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" />
+        		<TextBox Margin="141,0,12,54" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" />
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ciudad" VerticalAlignment="Bottom" Margin="13,0,0,74.283" FontSize="16"/>
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Dirección" VerticalAlignment="Bottom" Margin="13,0,0,24" FontSize="16"/>
+        		<TextBox Margin="141,0,12,8" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" />
+        		<CheckBox Content="" Margin="43,103,0,0" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top"/>
+        		<CheckBox Content="" Margin="176,103,212,0" Height="62" VerticalAlignment="Top" d:LayoutOverrides="Width"/>
+        		<CheckBox Content="" Margin="0,103,96,0" Height="62" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        		<CheckBox Content="" Margin="44,230,0,239" HorizontalAlignment="Left"/>
+        		<CheckBox Content="" Margin="171,230,217,239" d:LayoutOverrides="Width"/>
+        		<CheckBox Content="" Margin="0,230,96,239" HorizontalAlignment="Right"/>
         	</Grid>
         </StackPanel>
-
-        <!--ContentPanel. Colocar aquí el contenido adicional-->
     </Grid>
  
     <!--Código de ejemplo que muestra el uso de ApplicationBar-->

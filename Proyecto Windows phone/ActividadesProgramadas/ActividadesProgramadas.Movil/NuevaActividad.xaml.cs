@@ -36,14 +36,16 @@ namespace ActividadesProgramadas.Movil
             NavigationService.Navigate(new Uri("/mail.xaml", UriKind.Relative));
         }
 
-        private void borrar_Click(object sender, System.EventArgs e)
-        {
-        }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
 
 
+        }
+
+        private void borrar_Click(object sender, System.EventArgs e)
+        {
+            MessageBox.Show("Esta acción borrará los registros");
         }
     }
 }
