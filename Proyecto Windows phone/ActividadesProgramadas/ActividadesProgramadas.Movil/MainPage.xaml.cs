@@ -21,7 +21,7 @@ namespace ActividadesProgramadas.Movil
             InitializeComponent();
         }
 
-        private void ApplicationBarIconButton_Click(object sender, System.EventArgs e)
+        private void agregar_Click(object sender, System.EventArgs e)
         {
             NavigationService.Navigate(
                 new Uri("/NuevaActividad.xaml", UriKind.Relative));

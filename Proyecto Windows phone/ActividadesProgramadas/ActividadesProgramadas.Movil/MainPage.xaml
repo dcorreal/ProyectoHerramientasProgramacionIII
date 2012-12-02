@@ -31,8 +31,9 @@
 	</phone:PhoneApplicationPage.Resources>
 	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar>
-			<shell:ApplicationBarIconButton IconUri="/icons/appbar.add.rest.png" Text="agregar" Click="ApplicationBarIconButton_Click"/>
+			<shell:ApplicationBarIconButton x:Name="agregar" IconUri="/icons/appbar.add.rest.png" Text="agregar" Click="agregar_Click"/>
 			<shell:ApplicationBarIconButton x:Name="buscar" IconUri="/icons/appbar.feature.search.rest.png" Text="botón" Click="buscar_Click"/>
+			<shell:ApplicationBarIconButton x:Name="alertas" IconUri="/icons/appbar.favs.rest.png" Text="alertas"/>
 		</shell:ApplicationBar>
 	</phone:PhoneApplicationPage.ApplicationBar>
 

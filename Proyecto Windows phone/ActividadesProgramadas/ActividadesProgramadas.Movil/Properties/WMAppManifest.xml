@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{50ac5be7-4ad7-4465-9e09-7de9446b1c82}" Title="ActividadesProgramadas.Movil" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="ActividadesProgramadas.Movil author" Description="Sample description" Publisher="ActividadesProgramadas.Movil">
+  <App xmlns="" ProductID="{50ac5be7-4ad7-4465-9e09-7de9446b1c82}" Title="Actividades Programadas" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="ActividadesProgramadas.Movil author" Description="Sample description" Publisher="ActividadesProgramadas.Movil">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES"/>
@@ -27,7 +27,7 @@
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>ActividadesProgramadas.Movil</Title>
+          <Title>Actividades Programadas</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>

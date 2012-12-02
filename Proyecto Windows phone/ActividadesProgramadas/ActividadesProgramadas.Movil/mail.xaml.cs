@@ -13,21 +13,16 @@ using Microsoft.Phone.Controls;
 
 namespace ActividadesProgramadas.Movil
 {
-    public partial class Page1 : PhoneApplicationPage
+    public partial class mail : PhoneApplicationPage
     {
-        public Page1()
+        public mail()
         {
             InitializeComponent();
         }
 
-        private void editar_Click(object sender, System.EventArgs e)
+        private void enviar_Click(object sender, System.EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/NuevaActividad.xaml", UriKind.Relative));
-        }
-
-        private void eliminar_Click(object sender, System.EventArgs e)
-        {
-            MessageBox.Show("Desea eliminar el registro");
+            MessageBox.Show("El correo electrónico fue enviado exitosamente!");
         }
     }
 }

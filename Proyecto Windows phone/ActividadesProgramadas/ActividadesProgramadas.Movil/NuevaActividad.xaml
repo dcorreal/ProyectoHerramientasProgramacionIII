@@ -14,8 +14,10 @@
     shell:SystemTray.IsVisible="True">
 	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar>
-			<shell:ApplicationBarIconButton IconUri="/icons/appbar.close.rest.png" Text="botón"/>
-			<shell:ApplicationBarIconButton IconUri="/icons/appbar.save.rest.png" Text="Guardar"/>
+			<shell:ApplicationBarIconButton x:Name="cancelar" IconUri="/icons/appbar.close.rest.png" Text="cancelar" Click="cancelar_Click"/>
+			<shell:ApplicationBarIconButton x:Name="guardar" IconUri="/icons/appbar.save.rest.png" Text="Guardar" Click="guardar_Click"/>
+			<shell:ApplicationBarIconButton x:Name="borrar" IconUri="/icons/appbar.delete.rest.png" Text="borrar"/>
+			<shell:ApplicationBarIconButton x:Name="email" IconUri="/icons/appbar.feature.email.rest.png" Text="e-mail" Click="email_Click"/>
 		</shell:ApplicationBar>
 	</phone:PhoneApplicationPage.ApplicationBar>
 
@@ -34,36 +36,42 @@
         <StackPanel x:Name="ContentPanel" Margin="12,0,12,0" Grid.Row="1" >
         	<Grid x:Name="ContentPanel_Copy" Height="588">
         		<StackPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Width="100"/>
-        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nombre de la actividad" VerticalAlignment="Top" Margin="13,0,0,0"/>
-        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Intensidad" VerticalAlignment="Top" Margin="8,71,0,0" RenderTransformOrigin="0.195,0.815"/>
-        		<TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Margin="13,129,0,0" Height="35" HorizontalAlignment="Left"><Run Text="Programar Fecha"/><LineBreak/><Run/></TextBlock>
-        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Clasificación" VerticalAlignment="Top" Margin="13,259,0,0"/>
-        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sitio" Margin="13,0,0,217" VerticalAlignment="Bottom"/>
-        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="País" VerticalAlignment="Bottom" Margin="13,0,0,186"/>
-        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Departamento" VerticalAlignment="Bottom" Margin="13,0,0,155"/>
-        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ciudad" VerticalAlignment="Bottom" Margin="13,0,0,124"/>
-        		<TextBox Margin="0,22,153,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="45" RenderTransformOrigin="-0.1,0.511"/>
-        		<TextBox Margin="122,67,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="44" HorizontalAlignment="Left" Width="40"/>
-        		<TextBox Margin="219,67,197,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="44" RenderTransformOrigin="1.85,0.455"/>
-        		<TextBox Margin="0,67,85,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="44" HorizontalAlignment="Right" Width="40"/>
-        		<TextBlock TextWrapping="Wrap" Text="Diaria" VerticalAlignment="Top" Margin="166,71,197,0" RenderTransformOrigin="0.195,0.815" d:LayoutOverrides="Width"/>
-        		<TextBlock TextWrapping="Wrap" Text="Semanal" VerticalAlignment="Top" Margin="0,71,125,0" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Right"/>
-        		<TextBlock TextWrapping="Wrap" Text="Mensual" VerticalAlignment="Top" Margin="0,71,8,0" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Right"/>
-        		<TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Margin="13,168,0,0" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left"><Run Text="D"/><Run Text="ía"/></TextBlock>
-        		<TextBlock TextWrapping="Wrap" Text="Mes" VerticalAlignment="Top" Margin="104,168,0,0" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left"/>
-        		<TextBlock TextWrapping="Wrap" Text="Año" VerticalAlignment="Top" Margin="207,168,197,0" RenderTransformOrigin="0.195,0.815" d:LayoutOverrides="Width"/>
-        		<TextBox Margin="2,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="44" HorizontalAlignment="Left" Width="40"/>
-        		<TextBox Margin="101,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="44" HorizontalAlignment="Left" Width="40"/>
-        		<TextBox Margin="207,199,209,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="44" RenderTransformOrigin="3.475,0.477"/>
-        		<TextBlock TextWrapping="Wrap" Margin="13,290,0,271" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left" d:LayoutOverrides="Height" Text="Alta"/>
-        		<TextBlock TextWrapping="Wrap" Margin="166,290,0,271" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left" Text="Media" d:LayoutOverrides="Height"/>
-        		<TextBlock TextWrapping="Wrap" Margin="0,290,71,271" RenderTransformOrigin="0.509,0.5" HorizontalAlignment="Right" Text="Baja" d:LayoutOverrides="Height"/>
-        		<TextBox Margin="90,281,0,263" TextWrapping="Wrap" Text="TextBox" HorizontalAlignment="Left" Width="40"/>
-        		<TextBox Margin="0,281,141,263" TextWrapping="Wrap" Text="TextBox" HorizontalAlignment="Right" Width="40"/>
-        		<TextBox Margin="0,281,8,263" TextWrapping="Wrap" Text="TextBox" HorizontalAlignment="Right" Width="40"/>
-        		<TextBox Margin="68,0,85,177" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Height="45" RenderTransformOrigin="-0.1,0.511"/>
-        		<TextBox Margin="141,0,12,146" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Height="45" RenderTransformOrigin="-0.1,0.511"/>
-        		<TextBox Margin="141,0,12,115" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Height="45" RenderTransformOrigin="-0.1,0.511"/>
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nombre de la actividad" VerticalAlignment="Top" Margin="10,11,0,0" FontWeight="Bold" FontSize="21.333">
+        			<TextBlock.Foreground>
+        				<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+        			</TextBlock.Foreground>
+        		</TextBlock>
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Intensidad" VerticalAlignment="Top" Margin="8,91,0,0" RenderTransformOrigin="0.195,0.815" FontSize="21.333" FontWeight="Bold" Foreground="{StaticResource PhoneAccentBrush}"/>
+        		<TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Margin="9,171,0,0" Height="35" HorizontalAlignment="Left" FontWeight="Bold" FontSize="21.333" Foreground="{StaticResource PhoneAccentBrush}"><Run Text="Programar Fecha"/><LineBreak/><Run/></TextBlock>
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Clasificación" Margin="13,272,0,288" FontWeight="Bold" FontSize="21.333" d:LayoutOverrides="Height" Foreground="{StaticResource PhoneAccentBrush}"/>
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sitio" Margin="13,0,0,200" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="21.333" Foreground="{StaticResource PhoneAccentBrush}"/>
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="País" VerticalAlignment="Bottom" Margin="13,0,0,165" FontSize="16"/>
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Departamento" VerticalAlignment="Bottom" Margin="13,0,0,120" FontSize="16"/>
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ciudad" VerticalAlignment="Bottom" Margin="13,0,0,75" FontSize="16"/>
+        		<TextBox Margin="0,32,8,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="67" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" Name="txtnombre" />
+        		<TextBlock TextWrapping="Wrap" Text="Diaria" VerticalAlignment="Top" Margin="8,122,0,0" RenderTransformOrigin="0.195,0.815" FontSize="16" HorizontalAlignment="Left"/>
+        		<TextBlock TextWrapping="Wrap" Text="Semanal" VerticalAlignment="Top" Margin="102,123,0,0" RenderTransformOrigin="0.195,0.815" FontSize="16" HorizontalAlignment="Left"/>
+        		<TextBlock TextWrapping="Wrap" Text="Mensual" VerticalAlignment="Top" Margin="0,122,164,0" RenderTransformOrigin="0.195,0.815" FontSize="16" HorizontalAlignment="Right"/>
+        		<TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Margin="13,208,0,0" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left" FontSize="16"><Run Text="D"/><Run Text="ía"/></TextBlock>
+        		<TextBlock TextWrapping="Wrap" Text="Mes" VerticalAlignment="Top" Margin="122,208,0,0" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left" FontSize="16"/>
+        		<TextBlock TextWrapping="Wrap" Text="Año" VerticalAlignment="Top" Margin="0,208,168,0" RenderTransformOrigin="0.195,0.815" FontSize="16" HorizontalAlignment="Right"/>
+        		<TextBox Margin="43,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="57" FontSize="13.333" Name="txtdia" />
+        		<TextBlock TextWrapping="Wrap" Margin="13,0,0,261" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left" Text="Alta" FontSize="16" VerticalAlignment="Bottom"/>
+        		<TextBlock TextWrapping="Wrap" Margin="112,0,0,259" RenderTransformOrigin="0.195,0.815" HorizontalAlignment="Left" Text="Media" FontSize="16" VerticalAlignment="Bottom"/>
+        		<TextBlock TextWrapping="Wrap" Margin="0,0,164,260" RenderTransformOrigin="0.509,0.5" Text="Baja" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="36"/>
+        		<TextBox Margin="141,0,12,147" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" Name="txtpais" />
+        		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Dirección" VerticalAlignment="Bottom" Margin="13,0,0,32" FontSize="16"/>
+        		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="43,103,0,0" VerticalAlignment="Top" Height="62" Width="57" Checked="CheckBox_Checked" Name="chkdiaria" />
+        		<CheckBox Content="CheckBox" Margin="171,103,0,0" VerticalAlignment="Top" Height="62" HorizontalAlignment="Left" Width="57" Name="chksemanal" />
+        		<CheckBox Content="CheckBox" Margin="0,103,107,0" VerticalAlignment="Top" Height="62" HorizontalAlignment="Right" Width="57" Name="chkmensual" />
+        		<TextBox Margin="171,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" HorizontalAlignment="Left" Width="57" FontSize="13.333" Name="txtmes" />
+        		<TextBox Margin="0,194,107,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" HorizontalAlignment="Right" Width="57" FontSize="13.333" Name="txtano" />
+        		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="43,287,0,239" Width="57" Name="chkalto" />
+        		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="171,287,0,239" Width="57" Name="chkmedia" />
+        		<CheckBox Content="CheckBox" Margin="0,287,107,239" HorizontalAlignment="Right" Width="57" Name="chkbaja" />
+        		<TextBox Margin="141,0,12,103" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" Name="txtdepartamento" />
+        		<TextBox Margin="141,0,12,59" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" Name="txtciudad" />
+        		<TextBox Margin="141,0,12,14" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="57" RenderTransformOrigin="-0.1,0.511" FontSize="13.333" Name="txtdireccion" />
         	</Grid>
         </StackPanel>
 

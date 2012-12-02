@@ -14,10 +14,36 @@ using Microsoft.Phone.Controls;
 namespace ActividadesProgramadas.Movil
 {
     public partial class NuevaActividad : PhoneApplicationPage
-    {
+    {   
         public NuevaActividad()
         {
             InitializeComponent();
+        }
+
+        private void cancelar_Click(object sender, System.EventArgs e)
+        {
+            NavigationService.Navigate(
+            new Uri("/MainPage.xaml", UriKind.Relative));
+        }
+
+        private void guardar_Click(object sender, System.EventArgs e)
+        {
+            MessageBox.Show("¿Desea guardar la información?"); 
+        }
+
+        private void email_Click(object sender, System.EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/mail.xaml", UriKind.Relative));
+        }
+
+        private void borrar_Click(object sender, System.EventArgs e)
+        {
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+
         }
     }
 }
